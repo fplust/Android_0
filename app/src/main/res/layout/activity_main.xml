@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.app.fplust.android_0.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:text="@string/title"
+        android:id="@+id/title" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_movies"
+        android:text="@string/b_movie"
+        android:layout_below="@+id/title"
+        android:onClick="cB_movie" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_hawk"
+        android:text="@string/b_hawk"
+        android:layout_below="@+id/button_movies"
+        android:onClick="cB_hawk" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_BIB"
+        android:text="@string/b_bib"
+        android:layout_below="@+id/button_hawk"
+        android:onClick="cB_bigger" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_MYAM"
+        android:text="@string/b_myam"
+        android:layout_below="@+id/button_BIB"
+        android:onClick="cB_material" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_GUBI"
+        android:text="@string/b_gubi"
+        android:layout_below="@+id/button_MYAM"
+        android:onClick="cB_gubi" />
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/button_capstone"
+        android:text="@string/b_capstone"
+        android:layout_below="@+id/button_GUBI"
+        android:onClick="cB_capstone" />
+</RelativeLayout>
